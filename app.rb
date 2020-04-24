@@ -13,7 +13,7 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     @string = ""
-    @string = @number.times{@phrase += @phrase}
+    @number.times{@string += @phrase}
 
 
     # binding.pry
