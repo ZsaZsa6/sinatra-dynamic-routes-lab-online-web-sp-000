@@ -18,7 +18,7 @@ class App < Sinatra::Base
   end
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @wstring = ""
-    @word_string = params[:word1]+=@wstring += [:word2]
+    @word_string += ""
 
   end
   get '/:operation/:number1/:number2' do
