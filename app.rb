@@ -5,6 +5,7 @@ class App < Sinatra::Base
     @reverse_name = params[:name].reverse
   end
   get '/square/:number' do
+    @square_number = params[:number]
 
   end
   get '/say/:number/:phrase' do
