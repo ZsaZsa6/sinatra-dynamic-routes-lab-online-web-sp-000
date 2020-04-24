@@ -13,11 +13,8 @@ class App < Sinatra::Base
     @string = ""
     (params[:number].to_i).times do
     @string += "#{params[:phrase]}"
-    
+    end
     @string
-
-
-    # binding.pry
   end
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @wstring = ""
