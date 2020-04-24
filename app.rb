@@ -10,9 +10,9 @@ class App < Sinatra::Base
 
   end
   get '/say/:number/:phrase' do
+    @string = ""
     @number = params[:number].to_i
     @phrase = params[:phrase]
-    @string = ""
     @number.times{@string += @phrase}
     @string
 
@@ -21,7 +21,7 @@ class App < Sinatra::Base
   end
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @wstring = ""
-    @word_string = params[:word1]+=@wstring += [:word2] 
+    @word_string = params[:word1]+=@wstring += [:word2]
 
   end
   get '/:operation/:number1/:number2' do
