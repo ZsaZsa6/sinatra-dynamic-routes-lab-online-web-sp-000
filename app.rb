@@ -27,6 +27,7 @@ class App < Sinatra::Base
       @total = @n1+@n2
     elsif @operator == "subtract"
       @total = @n1-@n2
+    elsif @operator == 
     end
 
     @total.to_s
