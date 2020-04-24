@@ -14,8 +14,8 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     binding.pry
 
-    @string = @number.times {"#{@phrase}"}
-
+    @string = ""
+    
 
     # binding.pry
   end
