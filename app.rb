@@ -25,6 +25,8 @@ class App < Sinatra::Base
     @n2 = params[:number2].to_i
     if @operator = "add"
       @total = @n1 + @n2
+    elsif @operator = "subtract"
+      @total = @n1 - @n2
     end
 
     @total.to_s
