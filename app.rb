@@ -10,8 +10,10 @@ class App < Sinatra::Base
 
   end
   get '/say/:number/:phrase' do
-    @number = params[:number].to_i.times{"#{:phrase}"}
-    
+    @number = params[:number].to_i
+
+    @string = params[:phrase].times@number
+
 
     # binding.pry
   end
