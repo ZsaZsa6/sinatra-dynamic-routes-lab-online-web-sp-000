@@ -15,7 +15,7 @@ class App < Sinatra::Base
     binding.pry
 
     @string = ""
-    @string = ("#{:phrase}")
+    @number.times +=
 
 
     # binding.pry
